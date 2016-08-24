@@ -1,0 +1,17 @@
+//自定义格栅栏布局
+
+
+/*!*首页卡片1*!
+.make-xs-column{
+  @include make-xs-column(12,$card-gutter-width);
+}
+
+.make-md-column,
+.make-sm-column{
+  @include make-sm-column(6,$card-gutter-width);
+}
+
+.make-lg-column{
+  @include make-lg-column(3,$card-gutter-width);
+}*/
+
