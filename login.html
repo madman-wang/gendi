@@ -22,7 +22,7 @@
         </div>
     </div>
 </div>
-<div class="container video-story">
+<div class="container video-story video-story2">
     <div class="row twofold-row">
         <div class="col-lg-6 col-md-6 col-sm-6 col-xs-center left col-xs-bottom">
             <h2>看看根底如何为患者服务</h2>
@@ -54,15 +54,13 @@
                     <input type="text" class="form-control" id="email" placeholder="">
                 </div>
                 <div class="form-group col-lg-4 col-md-4 col-sm-6 col-xs-12">
-                    <label for="phone">email</label>
+                    <label for="phone">手机</label>
                     <input type="text" class="form-control" id="phone" placeholder="">
                 </div>
-                <div class="form-group col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                <div class="form-group col-lg-4 col-md-4 col-sm-6 col-xs-12 date">
                     <label for="date">预约时间</label>
-                    <div class="input-group">
-                        <span class="input-group-addon">@</span>
                         <input type="text" class="form-control" id="date" placeholder="">
-                    </div>
+                        <span class="sprite-i"></span>
                 </div>
                 <div class="submit col-lg-2">
                     <button class="btn btn-info col-xs-wrap-center">提交</button>
@@ -86,14 +84,26 @@
         </div>
     </div>
 </div>
+<div class="erweima">
+    <img src="images/erweima.jpg" alt="">
+</div>
 <div class="footer-nav"></div>
 <!--js-->
 <script type="text/javascript" src="http://cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
 <script type="text/javascript" src="js/ajax-html.js"></script>
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
 <script type="text/javascript" src="js/gendi.js"></script>
+<script type="text/javascript" src="js/pikaday.min.js"></script>
 <script type="text/javascript">
     active(5);
+    var picker = new Pikaday(
+            {
+                field: document.getElementById('date'),
+                firstDay: 1,
+                minDate: new Date('2010-01-01'),
+                maxDate: new Date('2020-12-31'),
+                yearRange: [2000,2020]
+            });
 </script>
 </body>
 </html>

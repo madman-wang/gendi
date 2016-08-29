@@ -8,6 +8,10 @@
     color: $dark-gary;
   }
 }
+.navbar-header{
+  position: relative;
+  z-index: 11;
+}
 .nav .active > a,
 .nav li a:hover{
   color: $dark-red!important;
