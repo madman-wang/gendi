@@ -1,6 +1,4 @@
-/**
- * Created by Administrator on 2016/8/22 0022.
- */
+
 //获取dom对象高度，找出最大高度,高度设置为一样
 function maxHeight (obj){
     var max = 0,
@@ -14,6 +12,24 @@ function maxHeight (obj){
     obj.css({
         height:max
     })
+}
+
+//视频播放
+function vidplay(video,button) {
+    button.onclick = function(){
+        if (video.paused) {
+            video.play();
+            video.controls = 'controls';
+            button.className += ' active';
+        }
+    };
+}
+
+//头部导航加active
+function active(index){
+    $(document).ajaxComplete(function(){
+        $('.navbar-nav > li').eq(index).addClass('active');
+    });
 }
 
 window.onload = function(){
@@ -30,6 +46,12 @@ window.onload = function(){
     var aFooterNav = $('.right-nav ul');
     if(aFooterNav){
         maxHeight(aFooterNav);
+    }
+
+    var video = document.getElementById("video1");
+    var button = document.getElementById("play");
+    if(video && button){
+        vidplay(video,button);
     }
 };
 

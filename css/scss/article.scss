@@ -1,0 +1,30 @@
+.article-container{
+  width: 90%;
+
+  @include min-media(1170px){
+    width: percentage(718 / 1140);
+  }
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.lage-title{
+  @include lineheight2(50px);
+  background-color: #F8F6F4;
+
+  .arrow-red-l{
+    margin-right: 10px;
+  }
+}
+.article-content{
+  @include padding-t-b(25px,100px);
+
+  img{
+    @include padding-t-b(20px,20px);
+  }
+
+  p{
+    line-height: 30px;
+    color: #B3B3B2;
+  }
+}

@@ -1,0 +1,46 @@
+.trends{
+  padding-top: 190px;
+  background: url("../images/viewpoint-bg.jpg") no-repeat center 0;
+
+  .twofold-row{
+    @include padding-t-b(50px,50px);
+  }
+}
+.trends-poster{
+  img{
+    @include min-media(1170px){
+      max-width: 538px;
+    }
+  }
+}
+.trends-text{
+  h5{
+    padding-bottom: 8px;
+    border-bottom: 2px solid #949494;
+  }
+  h3{
+    @include padding-t-b(20px,25px);
+    font-weight: normal;
+    clear: both;
+  }
+  p{
+    padding-bottom: 55px;
+  }
+  >a{
+    color: #C7C7C6;
+
+    .sprite-i{
+      margin-left: 10px;
+    }
+  }
+}
+@include max-media(992px){
+  .trends,
+  .trends-text p{
+    text-align: center;
+  }
+  .trends-text h5{
+    float: none!important;
+    margin: 3px auto;
+  }
+}

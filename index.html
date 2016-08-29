@@ -12,49 +12,13 @@
     <link rel="stylesheet" href="css/layout.css">
 </head>
 <body>
-    <div class="container-fluid navbar-large1 navbar-large-blank navbar-large-bg1 col-xs-bg-none">
-        <div class="container" style="overflow: visible">
-            <div class="row">
-                <div class="nav navbar">
-                    <div class="navbar-header">
-                        <a href="index.html"><img class="logo" src="images/logo.png" alt="logo"></a>
-                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                            <span class="sr-only">Toggle navigation</span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
-                    </div>
-                    <div class="col-lg-3 col-sm-1 hidden-xs"></div>
-                    <div id="navbar" class="navbar-collapse collapse">
-                        <ul class="nav navbar-nav">
-                            <li class="active dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">关于我们<span class="caret visible-xs-inline-block"></span></a>
-                                <ul class="dropdown-menu">
-                                    <span class="glyphicon glyphicon-triangle-top hidden-xs"></span>
-                                    <li><a href="javascript:">罕见病困境</a></li>
-                                    <li><a href="javascript:">根底简介</a></li>
-                                    <li><a href="javascript:">团队与伙伴</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="javascript:">根底服务</a></li>
-                            <li class="near-r"><a href="javascript:">动态</a></li>
-                            <li class="near-l"><a href="javascript:">观点</a></li>
-                            <li><a href="javascript:">加入根底</a></li>
-                        </ul>
-                        <ul class="nav navbar-nav navbar-right navbar-icon">
-                            <li><i class="sprite-i hidden-xs"></i><a href="javascript:">联系方式</a></li>
-                            <li><i class="sprite-i hidden-xs"></i><a href="javascript:">登录</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <div class="container-fluid navbar-large1 navbar-large-blank navbar-large-bg navbar-large-bg1 col-xs-bg-none">
+        <div class="container header-nav"></div>
         <div class="container nav-text col-xs-center">
             <div class="row">
                 <h1 class="h1">罕见病，有根底</h1>
                 <h3 class="h3">无论罕见病有多困难<br>有根底和你们站在一起</h3>
-                <h3 class="h3"><a href="javascript:">了解更多</a><i class="sprite-i poiner"></i></h3>
+                <h3 class="h3">了解更多<i class="sprite-i arrow-red-b"></i></h3>
             </div>
         </div>
     </div>
@@ -97,22 +61,23 @@
         <a class="btn btn-default btn-lg center-block" href="javascript:">根底如何工作</a>
     </div>
     <div class="container video-story">
-        <div class="row">
+        <div class="row twofold-row">
             <div class="col-lg-6 col-md-6 col-sm-6 col-xs-center left col-xs-bottom">
                 <h2>我的根底故事</h2>
-                <a class="h4">根底健康黄如方<i class="sprite-i"></i></a>
+                <a class="h4">根底健康黄如方<i class="sprite-i arrow-red-r"></i></a>
             </div>
             <div class="col-lg-6 col-md-6 col-sm-6 video">
-                <video src="http://static.video.qq.com/TPout.swf" width="100%" height="230px"></video>
+                <video id="video1" poster="images/video-poster.jpg" src="http://sres.szgla.com/flv/yzvideo.flv"></video>
+                <div id="play" class="pointer"><img src="images/video-play.png"></div>
                 <p class="center">了解我的根底故事</p>
             </div>
         </div>
     </div>
     <div class="viewpoint">
         <div class="container card2-container">
-            <div class="row">
+            <div class="row twofold-row">
                 <h2 class="col-xs-center">根底观点</h2>
-                <div class="row">
+                <div class="row twofold-row">
                     <div class="viewpoint-box col-lg-4 col-md-6 col-sm-6 col-xs-bottom">
                         <a class="visible-lg" href="javascript:"><img src="images/viewpoint1.jpg" alt=""></a>
                         <div class="card-box">
@@ -151,63 +116,26 @@
                         通过陌陌，您可以认识身边的人、加入附近的群组、查看附近的留言、参加附近的活动。
                         联合创始人及核心团队均来自互联网公司。
                     </p>
-                    <label>
-                        <input class="form-control input-lg" type="text" name="user" placeholder="请输入您的姓名" />
-                    </label>
-                    <label>
-                        <input class="form-control input-lg" type="password" name="password" placeholder="请输入您的手机号码" />
-                    </label>
-                    <label>
-                        <textarea class="form-control" name="leave-word" placeholder="留言" rows="6"></textarea>
-                    </label>
-                    <button class="btn btn-info col-xs-wrap-center">提交</button>
+                    <form action="" name="user-info">
+                        <label>
+                            <input class="form-control input-lg" type="text" name="user" placeholder="请输入您的姓名" />
+                        </label>
+                        <label>
+                            <input class="form-control input-lg" type="text" name="phone-number" placeholder="请输入您的手机号码" />
+                        </label>
+                        <label>
+                            <textarea class="form-control" name="leave-word" placeholder="留言" rows="6"></textarea>
+                        </label>
+                        <button class="btn btn-info col-xs-wrap-center">提交</button>
+                    </form>
                 </div>
             </div>
         </div>
     </div>
-    <div class="footer-nav">
-        <div class="container">
-            <div class="row top-wrap">
-                <div class="logo col-lg-4 col-md-2 col-sm12 col-xs-12">
-                    <img src="images/logo.png" alt="">
-                </div>
-                <div class="right-nav col-lg-8 col-md-10 col-sm-12">
-                    <div class="row">
-                        <ul class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
-                            <li><a href="javascript:">罕见病困境</a></li>
-                            <li><a href="javascript:">根底简介</a></li>
-                            <li><a href="javascript:">团队与伙伴</a></li>
-                        </ul>
-                        <ul class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
-                            <li><a href="javascript:">临床诊断</a></li>
-                            <li><a href="javascript:">免费遗传咨询</a></li>
-                            <li><a href="javascript:">基因检测</a></li>
-                            <li><a href="javascript:">健康档案管理</a></li>
-                        </ul>
-                        <ul class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
-                            <li><a href="javascript:">媒体报道</a></li>
-                            <li><a href="javascript:">机构动态</a></li>
-                            <li><a href="javascript:">根底观点</a></li>
-                        </ul>
-                        <ul class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
-                            <li><a href="javascript:">招聘岗位</a></li>
-                            <li><a href="javascript:">成为合作伙伴</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="row bottom-wrap">
-                <div class="link col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                    <a class="sprite-i qq" href="javascript:" target="_blank"><i></i></a>
-                    <a class="sprite-i wx" href="javascript:" target="_blank"><i></i></a>
-                    <a class="sprite-i wb" href="javascript:" target="_blank"><i></i></a>
-                </div>
-                <p class="col-lg-6 col-md-6 col-sm-6 col-xs-12 text-right">粤ICP备 13057487号</p>
-            </div>
-        </div>
-    </div>
+    <div class="footer-nav"></div>
     <!--js-->
     <script type="text/javascript" src="http://cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
+    <script type="text/javascript" src="js/ajax-html.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/gendi.js"></script>
 </body>

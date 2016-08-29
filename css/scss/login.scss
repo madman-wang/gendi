@@ -1,0 +1,39 @@
+.navbar-large-bg3{
+  background-color: #2A2A2A;
+  background-image: url("../images/nav-large-bg3.jpg");
+  background-position: center bottom;
+
+  .h1{
+    @include padding-t-b(80px,28px);
+  }
+
+  .btn-info{
+    margin-top: -10px;
+
+    @include xs-media(){
+      display: block;
+      margin: 100px auto;
+      float: none!important;
+    }
+  }
+}
+
+.login-client{
+  .submit{
+    padding-left: 0;
+  }
+  .phone-number{
+    >p{
+      margin-top: 12px;
+      margin-bottom: 25px;
+      color: $join-title-color;
+    }
+    .number{
+      font-weight: bold;
+      color: $dark-red;
+    }
+    @include min-media(1170px){
+      text-align: right;
+    }
+  }
+}
