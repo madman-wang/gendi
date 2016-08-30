@@ -7,6 +7,20 @@
   .navbar-nav > li > a{
     color: $dark-gary;
   }
+
+  .navbar-nav{
+    margin: 0;
+  }
+  .navbar-nav > li > a{
+    padding: 20px 0!important;
+  }
+
+  .dropdown-menu{
+    padding: 0;
+  }
+  .video-story{
+    padding-top: 0!important;
+  }
 }
 .navbar-header{
   position: relative;
@@ -62,7 +76,9 @@
   }
 }
 .navbar-large-white{
-
+  .glyphicon-triangle-top{
+    color: $dark-red!important;
+  }
   .logo{
     background-position: 0 -93px;
   }

@@ -104,3 +104,9 @@
     float: none!important;
   }
 }
+@include xs-media(){
+  .join-info .form-info{
+    padding-top: 65px;
+    border: none;
+  }
+}

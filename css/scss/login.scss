@@ -30,6 +30,29 @@
     .number{
       font-weight: bold;
       color: $dark-red;
+
+      .sprite-i{
+        margin-right: 3px;
+      }
+
+      &:nth-of-type(1){
+        .sprite-i{
+          background-position: -67px -19px;
+        }
+      }
+      &:nth-of-type(2){
+        .sprite-i{
+          background-position: -0px -51px;
+        }
+      }
+      &:nth-of-type(3){
+        .sprite-i{
+          background-position: -17px -51px;
+        }
+      }
+      a{
+        color: $dark-red;
+      }
     }
     @include min-media(1170px){
       text-align: right;
