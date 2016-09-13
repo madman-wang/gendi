@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -13,19 +13,33 @@
 </head>
 <body>
     <div class="container-fluid navbar-large1 navbar-large-blank navbar-large-bg navbar-large-bg1 col-xs-bg-none">
+        <img class="logo2 visible-lg" src="images/logo2.jpg" alt="根底健康">
         <div class="container header-nav"></div>
         <div class="container nav-text col-xs-center">
             <div class="row">
                 <h1 class="h1">罕见病，有根底</h1>
                 <h3 class="h3">无论罕见病有多困难<br>有根底和你们站在一起</h3>
-                <h3 class="h3">了解更多<i class="sprite-i arrow-red-b"></i></h3>
+            </div>
+        </div>
+        <div class="container person-info hidden-xs">
+            <div class="person-box">
+                <h4 class="h4">黄如方</h4>
+                <h4 class="h4">
+                    假性软骨发育不全症患者<br>
+                    中国罕见病发展中心 CORD 创始人<br>
+                    根底健康 创始人｜CEO
+                </h4>
             </div>
         </div>
     </div>
     <div class="container card1">
         <div class="card-title">
-            <h3 class="center">根底健康是为罕见病患者提供<br>更全面、更优质诊聊服务的互联网服务平台</h3>
-            <h3 class="center">我们以罕见病患者为中心<br>（通过先进科技，提供全面的健康服务）</h3>
+		    <h1 class="center">关于根底健康</h1>
+            <h3 class="center">根底健康是一个为罕见病患者提供诊疗服务的互联网平台。<br>
+                我们以罕见病患者需求为中心，<br>
+                通过先进科技，提供更优质、更全面的健康服务。
+            </h3>
+            <h1 class="center">我们的业务</h1>
         </div>
         <div class="row card-list">
             <div class="card-content col-xs-12 col-sm-6 col-md-6 col-lg-3">
@@ -62,15 +76,22 @@
     </div>
     <div class="container video-story">
         <div class="row twofold-row">
-            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-center left col-xs-bottom">
-                <h2>我的根底故事</h2>
-                <a class="h4">根底健康黄如方<i class="sprite-i arrow-red-r"></i></a>
-            </div>
-            <div class="col-lg-6 col-md-6 col-sm-6 video">
-                <video id="video1" poster="images/video-poster.jpg" src="http://sres.szgla.com/flv/yzvideo.flv"></video>
-                <div id="play" class="pointer"><img src="images/video-play.png"></div>
-                <p class="center">了解我的根底故事</p>
-            </div>
+            <ul>
+                <li>
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-center left col-xs-bottom">
+                        <h2>黄如方的根底故事：8年CORD新启航</h2>
+                        <a class="h4">根底健康 CEO 黄如方<i class="sprite-i arrow-red-r"></i></a>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6 video"><a href="javascript:"><img src="images/person1.jpg" ></a></div>
+                </li>
+                <li>
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-center left col-xs-bottom">
+                        <h2>谭雪松的根底故事：有信有望有爱的路上</h2>
+                        <a class="h4">根底健康 COO 谭雪松<i class="sprite-i arrow-red-r"></i></a>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6 video"><a href="javascript:"><img src="images/person2.jpg" ></a></div>
+                </li>
+            </ul>
         </div>
     </div>
     <div class="viewpoint">
@@ -109,12 +130,10 @@
     <div class="user-info col-xs-bg-none">
         <div class="container">
             <div class="row">
-                <h2 class="col-xs-center">联系我们-<br>我们珍惜每一次联系</h2>
+                <h2 class="col-xs-center">随时联系我们<br>我们珍惜每一次沟通</h2>
                 <div class="form-info pull-right col-xs-12 col-lg-margin-normal">
                     <p class="title">
-                        "陌陌"是陌陌科技于2010年8月推出的一款基于地理位置的移动社交产品。
-                        通过陌陌，您可以认识身边的人、加入附近的群组、查看附近的留言、参加附近的活动。
-                        联合创始人及核心团队均来自互联网公司。
+                        留下你的联系方式以及留言，根底的工作人员将在24小时内与你取得联系。
                     </p>
                     <form action="" name="user-info">
                         <label>
@@ -138,5 +157,16 @@
     <script type="text/javascript" src="js/ajax-html.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/gendi.js"></script>
+    <script type="text/javascript" src="js/responsiveslides.min.js"></script>
+    <script type="text/javascript">
+        $(function() {
+            $(".video-story .twofold-row ul").responsiveSlides({
+                auto: true,
+                speed: 1500,
+                timeout: 4000,
+                pager: false
+            });
+        });
+    </script>
 </body>
 </html>
