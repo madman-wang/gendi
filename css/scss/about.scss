@@ -98,7 +98,12 @@
   .synopsis{
     h4:first-child{
       padding-bottom: $synopsis-padding-b;
-      color: #BBAB91;
+    }
+
+    @include min-media(998px){
+      h4{
+        color: #fff;
+      }
     }
 
   }
