@@ -161,13 +161,14 @@
     width: 90%;
     margin: 0 auto;
     p{
+      padding: 70px 0;
       line-height: 30px;
     }
-    .partner-logo{
-      @include padding-t-b(60px,100px);
-    }
   }
+}
 
+.video-story,
+.partner{
   .rslides1_tabs{
     text-align: center;
     overflow: hidden;

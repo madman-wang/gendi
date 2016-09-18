@@ -45,6 +45,7 @@
   >.container{
     padding-bottom: 60px;
     background-image: url("../images/feedback-pic.jpg");
+    background-position: right bottom!important;
 
     @include max-media(1200px){
       background-image: none;

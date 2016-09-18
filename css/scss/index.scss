@@ -47,7 +47,7 @@
   min-height: 710px;
 }
 .navbar-large2{
-  min-height: 768px;
+  min-height: 600px;
 }
 .navbar-large-bg{
   background-position: center 0;
@@ -60,6 +60,9 @@
 .navbar-large-bg2{
   background-color: #787C88;
   background-image: url("../images/nav-large-bg2-1.jpg");
+}
+.navbar-large-bg3{
+  background-position: right 0;
 }
 .navbar-large-blank{
 
@@ -191,17 +194,16 @@
     }
   }
 }
-.logo2{
-  position: absolute;
-  left: 50%;
-  top: 0;
-  z-index: 100;
-  margin-left: -586px;
+.navbar-header{
+  padding: 0!important;
+  @include xs-media(){
+    padding: 30px 0!important;
+  }
 }
 
 /*首页列表*/
 .card1{
-  background: url("../images/card-bg.jpg") no-repeat 0 bottom;
+  background: url("../images/hope.jpg") no-repeat 0 bottom;
 }
 .card-list{
   padding-bottom: 110px;
@@ -269,7 +271,7 @@
   }
 
   .left{
-    >h2{
+    h2{
       padding: 88px 0 40px 0;
     }
   }
@@ -296,6 +298,16 @@
     color: #A8A8A7;
     background-color: #e8e8e8;
   }
+
+  .rslides1_tabs{
+    width: 50%;
+    float: right;
+    padding: 20px 0;
+    @include xs-media(){
+      width: 100%;
+      text-align: center;
+    }
+  }
 }
 
 /*根底观点*/
@@ -304,7 +316,7 @@
   background-color: #FAFAFA;
   .container{
     .row{
-      >h2{
+      >h1{
         padding: 128px 0 75px 0;
       }
     }
@@ -398,7 +410,10 @@
 
 
     >p{
-      font-size: 22px;
+      span{
+        font-size: 22px;
+      }
+      font-size: 14px;
       line-height: 1.8;
       padding-bottom: 112px - 49px;
     }
