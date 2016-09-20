@@ -32,6 +32,17 @@ function active(index){
     });
 }
 
+//点击滑动效果
+function clickSlide(obj,scrollTop) {
+    if(obj){
+        obj.click(function () {
+            $('body').animate({
+                scrollTop: scrollTop
+            });
+        });
+    }
+}
+
 window.onload = function(){
     var aCard = $('.card-content .card-box');
     if(aCard){
@@ -53,5 +64,11 @@ window.onload = function(){
     if(video && button){
         vidplay(video,button);
     }
+
+    var scrollHeight = $('.container-fluid').height() + $('.title-indication').height() + 30;
+    var scrollHeight2 = scrollHeight + $('.sickness-data').outerHeight(true);
+    clickSlide($('.clickSlide'),scrollHeight);
+    clickSlide($('.clickSlide2'),scrollHeight2);
+    clickSlide($('.btn-info'),$('.navbar-large-blank').outerHeight());
 };
 

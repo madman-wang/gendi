@@ -26,8 +26,7 @@
     line-height: 30px;
   }
 
-  .pull-left,
-  .pull-right{
+  .col-xs-bottom{
     @include xs-media(){
       float: none!important;
       padding: 0 30px!important;

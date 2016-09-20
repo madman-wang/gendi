@@ -188,7 +188,7 @@ img {
 .nav-text2 h1 {
   font-size: 48px;
   padding-top: 200px;
-  padding-bottom: 180px; }
+  padding-bottom: 30px; }
 .nav-text2 h4, .nav-text2 .feedback .explain-wrap h3, .feedback .explain-wrap .nav-text2 h3 {
   padding-bottom: 40px; }
 .nav-text2 h5 {
@@ -292,14 +292,17 @@ img {
 
 /*根底观点*/
 .viewpoint {
-  padding-bottom: 136px;
+  padding-bottom: 60px;
   background-color: #FAFAFA; }
   .viewpoint .container .row > h1 {
     padding: 128px 0 75px 0; }
   .viewpoint .card2-container {
     padding-left: 30px;
     padding-right: 30px; }
+    .viewpoint .card2-container .col-xs-center {
+      padding: 30px 0; }
   .viewpoint .viewpoint-box {
+    margin-bottom: 30px;
     padding: 0 30px !important; }
     .viewpoint .viewpoint-box > a {
       display: block;
@@ -426,13 +429,11 @@ img {
   font-size: 16px;
   line-height: 30px; }
 @media (max-width: 768px) {
-  .right-explain .pull-left,
-  .right-explain .pull-right {
+  .right-explain .col-xs-bottom {
     float: none !important;
     padding: 0 30px !important;
     text-align: center; }
-    .right-explain .pull-left p,
-    .right-explain .pull-right p {
+    .right-explain .col-xs-bottom p {
       text-align: center; } }
 
 .feedback {

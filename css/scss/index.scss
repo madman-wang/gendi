@@ -164,7 +164,7 @@
   h1{
     font-size: 48px;
     padding-top: 200px;
-    padding-bottom: 180px;
+    padding-bottom: 30px;
   }
   h4{
     padding-bottom: 40px;
@@ -312,7 +312,7 @@
 
 /*根底观点*/
 .viewpoint{
-  padding-bottom: 136px;
+  padding-bottom: 60px;
   background-color: #FAFAFA;
   .container{
     .row{
@@ -323,11 +323,15 @@
   }
 
   .card2-container{
+    .col-xs-center{
+      padding: 30px 0;
+    }
     padding-left: $card2-padding;
     padding-right: $card2-padding;
   }
 
   .viewpoint-box{
+    margin-bottom: 30px;
     padding: 0 30px!important;
     >a{
       display: block;
