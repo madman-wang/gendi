@@ -42,12 +42,21 @@
   background-color: #2C2B2E;
 
   >.container{
-    padding-bottom: 60px;
-    background-image: url("../images/feedback-pic.jpg");
-    background-position: right bottom!important;
 
-    @include max-media(1200px){
-      background-image: none;
+    .rslides{
+      ul,li{
+        height: 100%!important;
+      }
+      li{
+        background-position: right bottom!important;
+        background-repeat: no-repeat;
+        @include max-media(1200px){
+          background-image: none;
+        }
+        &:nth-child(1){
+          background-image: url("../images/feedback-pic.jpg");
+        }
+      }
     }
   }
 
@@ -64,7 +73,7 @@
   .next,
   .prev{
     @extend .sprite-i;
-    margin: 0 30px;
+    margin: 30px;
   }
 
   .prev{

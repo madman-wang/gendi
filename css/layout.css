@@ -295,7 +295,7 @@ img {
   padding-bottom: 60px;
   background-color: #FAFAFA; }
   .viewpoint .container .row > h1 {
-    padding: 128px 0 75px 0; }
+    padding: 75px 0; }
   .viewpoint .card2-container {
     padding-left: 30px;
     padding-right: 30px; }
@@ -438,20 +438,23 @@ img {
 
 .feedback {
   background-color: #2C2B2E; }
-  .feedback > .container {
-    padding-bottom: 60px;
-    background-image: url("../images/feedback-pic.jpg");
-    background-position: right bottom !important; }
+  .feedback > .container .rslides ul, .feedback > .container .rslides li {
+    height: 100% !important; }
+  .feedback > .container .rslides li {
+    background-position: right bottom !important;
+    background-repeat: no-repeat; }
     @media (max-width: 1200px) {
-      .feedback > .container {
+      .feedback > .container .rslides li {
         background-image: none; } }
+    .feedback > .container .rslides li:nth-child(1) {
+      background-image: url("../images/feedback-pic.jpg"); }
   .feedback .explain-wrap h4, .feedback .explain-wrap h3 {
     padding-bottom: 60px; }
   .feedback .explain-wrap h3 {
     padding-top: 150px; }
   .feedback .next,
   .feedback .prev {
-    margin: 0 30px; }
+    margin: 30px; }
   .feedback .prev {
     background-position: -49px -17px; }
     .feedback .prev:hover {
