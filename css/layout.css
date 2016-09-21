@@ -439,7 +439,6 @@ img {
 @media (max-width: 768px) {
   .right-explain .col-xs-bottom {
     float: none !important;
-    padding: 0 30px !important;
     text-align: center; }
     .right-explain .col-xs-bottom p {
       text-align: center; } }
@@ -451,10 +450,6 @@ img {
   .feedback > .container .rslides li {
     // background-position: right bottom !important;
     background-repeat: no-repeat; }
-    @media (max-width: 1200px) {
-      .feedback > .container .rslides li {
-        background-image: none !important; }
-    }
     .feedback > .container .rslides li:nth-child(1) {
       background-image: url("../images/anba_koutu.png");
       background-size: contain;
@@ -1070,9 +1065,6 @@ img {
   .indication-text{
     text-align: center;
   }
-  .nav-text .h1{
-    padding: 80px 0!important;
-  }
   .nav-text2 h1{
     padding: 100px 0 80px  0!important;
   }
@@ -1095,5 +1087,75 @@ img {
   }
   .navbar-header{
     padding: 0!important;
+  }
+  .navbar-large-bg2,
+  .navbar-large1{
+    min-height: 570px;
+  }
+  .navbar-large-bg{
+    background-size: contain;
+    background-position: center bottom;
+  }
+  .nav-text2 h1,
+  .nav-text .h1{
+    font-size: 36px;
+    padding: 50px 0!important;
+  }
+  .sickness-data .data .h3{
+    font-size: 16px;
+  }
+  .video-story .left h2,
+  .user-info .form-info > p span,
+  .nav-text .h3{
+    font-size: 20px;
+  }
+  .contact-client .client-title .pull-left,
+  .sickness-data .data .h3 strong,
+  .title-indication .row  > h2:first-child,
+  .viewpoint .container .row > h1,
+  .card-title h1{
+    font-size: 24px;
+  }
+  .contact-client .client-title .pull-right,
+  .card-title > h3{
+    font-size: 13px!important;
+  }
+  .video-story{
+    padding-bottom: 80px;
+  }
+  .video-story .left h2{
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  .user-info .form-info > p{
+    padding-bottom: 30px!important;
+  }
+  .sickness-data{
+    padding: 50px 0;
+  }
+  .right-explain .col-xs-bottom{
+    padding: 0 2%;
+  }
+  .feedback{
+    padding: 0 4%;
+    text-align: justify;
+  }
+  .feedback > .container .rslides li{
+    background-position: 0 bottom!important;
+    min-height: 700px;
+  }
+  .feedback .explain-wrap h3{
+    padding-top: 60px;
+  }
+  .feedback .explain-wrap h4,
+  .feedback .explain-wrap h3{
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .feedback .explain-wrap h4{
+    font-size: 16px;
+  }
+  .navbar-large-bg3 .h1{
+    font-size: 30px;
   }
 }

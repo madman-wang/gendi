@@ -42,6 +42,15 @@ function clickSlide(obj,scrollTop) {
         });
     }
 }
+function clearBlock(dom) {
+    if(dom.length == 0){
+        return;
+    }
+    if(dom){
+        html = dom.html().replace(/<br>/g,'');
+        dom.html(html);
+    }
+}
 
 window.onload = function(){
     var aCard = $('.card-content .card-box');
@@ -70,5 +79,13 @@ window.onload = function(){
     clickSlide($('.clickSlide'),scrollHeight);
     clickSlide($('.clickSlide2'),scrollHeight2);
     clickSlide($('.btn-info'),$('.navbar-large-blank').outerHeight());
+
+    if(window.innerWidth < 768){
+        clearBlock($('.contact-client .client-title .pull-right'));
+        var arrP = $('.right-explain .col-xs-bottom p');
+        for(var i = 0; i<arrP.length;i++) {
+            clearBlock($(arrP[i]));
+        }
+    }
 };
 
