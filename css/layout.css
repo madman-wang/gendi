@@ -1057,7 +1057,7 @@ img {
 /*移动端调整*/
 @media screen and (max-width:768px) {
   .card-box h4 {
-    line-height: 60px;
+    height: auto;
   }
   .title-indication{
     margin-top: 20px!important;
@@ -1104,11 +1104,13 @@ img {
   .sickness-data .data .h3{
     font-size: 16px;
   }
+  .join-title .title-top h3,
   .video-story .left h2,
   .user-info .form-info > p span,
   .nav-text .h3{
     font-size: 20px;
   }
+  .join-title .title-top h2,
   .contact-client .client-title .pull-left,
   .sickness-data .data .h3 strong,
   .title-indication .row  > h2:first-child,
