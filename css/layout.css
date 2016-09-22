@@ -129,6 +129,9 @@ img {
 
 .navbar-large-blank .logo {
   background-position: 0 -67px; }
+.navbar-icon li:nth-of-type(1) i{
+  margin-right: 10px;
+}
 .navbar-large-blank .navbar-icon li:nth-of-type(1) i {
   background-position: 0 0; }
 .navbar-large-blank .navbar-icon li:nth-of-type(2) i {
@@ -1074,7 +1077,10 @@ img {
   margin-left: -45px;
   margin-right: -45px;
 }
-.card1 .card-list + h2{
+.card1 .card-list + h2 span:first-child{
+  font-size: 30px;
+}
+.card1 .card-list + h2 a{
   font-size: 60px;
 }
 
@@ -1140,6 +1146,7 @@ img {
   .nav-text .h3{
     font-size: 20px;
   }
+  .card1 .card-list + h2 span:first-child,
   .join-title .title-top h2,
   .contact-client .client-title .pull-left,
   .sickness-data .data .h3 strong,
@@ -1199,12 +1206,12 @@ img {
   .team-introduce .founder:hover .particular{
     display: block;
   }
-  .card1 .card-list + h2{
-    font-size: 30px;
-  }
   .card-list + h2 + a{
     width: 100%;
     margin-left: 0;
     margin-right: 0;
+  }
+  .card1 .card-list + h2 a{
+    font-size: 30px;
   }
 }
