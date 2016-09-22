@@ -42,6 +42,7 @@ function clickSlide(obj,scrollTop) {
         });
     }
 }
+
 function clearBlock(dom) {
     if(dom.length == 0){
         return;
@@ -51,6 +52,7 @@ function clearBlock(dom) {
         dom.html(html);
     }
 }
+
 
 window.onload = function(){
     var aCard = $('.card-content .card-box');
@@ -86,6 +88,18 @@ window.onload = function(){
         for(var i = 0; i<arrP.length;i++) {
             clearBlock($(arrP[i]));
         }
+        if(person){
+            person.click(function () {
+                if(personText.css('display') == 'none'){
+                    personText.css('display','block');
+                }else {
+                    personText.css('display','none');
+                }
+            });
+        }
     }
+
+    var person = $('.team-introduce .founder-wrap');
+    var personText = $('.team-introduce .founder-wrap .particular');
 };
 
