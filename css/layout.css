@@ -155,9 +155,6 @@ img {
   background-position: 0 -17px; }
 .navbar-icon li:nth-of-type(2):hover i {
   background-position: -16px -17px; }
-.navbar-icon i {
-  margin-top: 33px;
-  vertical-align: top !important; }
 .navbar-icon a {
   display: inline-block !important; }
 
@@ -202,6 +199,7 @@ img {
   position: relative;
   overflow: visible; }
   .person-info .person-box {
+    margin-top: -10px;
     float: right; }
   .person-info h4:first-child, .person-info .feedback .explain-wrap h3:first-child, .feedback .explain-wrap .person-info h3:first-child {
     padding-bottom: 20px; }
@@ -217,7 +215,7 @@ img {
   background: url("../images/hope.jpg") no-repeat 0 bottom; }
 
 .card-list {
-  padding-bottom: 110px; }
+  padding-bottom: 50px; }
   .card-list + h2 + a {
     margin-top: 60px;
     margin-bottom: 200px; }
@@ -268,7 +266,7 @@ img {
     .video-story .video .active {
       display: none; }
   .video-story .left h2 {
-    padding: 88px 0 40px 0; }
+    padding: 40px 0; }
   .video-story .h4 {
     color: #e8e8e8; }
   .video-story .sprite-i, .video-story .feedback .next, .feedback .video-story .next,
@@ -315,6 +313,7 @@ img {
     .viewpoint .viewpoint-box > a {
       display: block;
       max-width: 100%;
+      color: #353535;
       overflow: hidden; }
       .viewpoint .viewpoint-box > a img {
         display: block;
@@ -627,11 +626,17 @@ img {
 .team-introduce {
   padding-top: 100px;
   padding-bottom: 140px; }
-  .team-introduce .founder-wrap:nth-of-type(1) .founder {
-    background-image: url("../images/team/team-founder1.jpg"); }
-  .team-introduce .founder-wrap:nth-of-type(2) .founder {
-    background-image: url("../images/team/team-founder2.jpg"); }
+  .team-introduce .founder-wrap:nth-of-type(1){
+  }
+  .team-introduce .founder-wrap:nth-of-type(1) h2{
+    padding-bottom: 40px;
+  }
+.team-introduce .founder-wrap:nth-of-type(1) p{
+  color: #BBAB91;
+}
   .team-introduce .founder-wrap:nth-of-type(3) .founder {
+    background-image: url("../images/team/team-founder1.jpg"); }
+  .team-introduce .founder-wrap:nth-of-type(4) .founder {
     background-image: url("../images/team/team-founder2.jpg"); }
   @media (max-width: 1200px) {
     .team-introduce .founder-wrap {
@@ -1053,6 +1058,25 @@ img {
     background-position: 0 10px;
   }
 }
+.video-story .rslides1 li .text{
+  overflow : hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  line-height: 1.6;
+}
+.video-story .rslides1 li a{
+  padding: 50px 0;
+  padding-right: 10px;
+  color: #d87272;
+}
+.team-introduce .twofold-row{
+  margin-left: -45px;
+  margin-right: -45px;
+}
+.card1 .card-list + h2{
+  font-size: 60px;
+}
 
 /*移动端调整*/
 @media screen and (max-width:768px) {
@@ -1096,13 +1120,19 @@ img {
     background-size: contain;
     background-position: center bottom;
   }
+  .navbar-large-bg1{
+    background-image: url("../images/xs-index-bg.png");
+  }
+  .navbar-large-bg2{
+    background-image: url("../images/xs-sever-bg.png");
+  }
   .nav-text2 h1,
   .nav-text .h1{
     font-size: 36px;
-    padding: 50px 0!important;
+    padding: 20px 0!important;
   }
   .sickness-data .data .h3{
-    font-size: 16px;
+    font-size: 14px;
   }
   .join-title .title-top h3,
   .video-story .left h2,
@@ -1154,10 +1184,27 @@ img {
     padding-left: 0;
     padding-right: 0;
   }
+  .feedback .explain-wrap h3,
   .feedback .explain-wrap h4{
     font-size: 16px;
   }
   .navbar-large-bg3 .h1{
     font-size: 30px;
+  }
+  .team-introduce .founder{
+  }
+  .team-introduce .particular{
+    display: none;
+  }
+  .team-introduce .founder:hover .particular{
+    display: block;
+  }
+  .card1 .card-list + h2{
+    font-size: 30px;
+  }
+  .card-list + h2 + a{
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
   }
 }
