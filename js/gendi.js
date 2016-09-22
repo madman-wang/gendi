@@ -88,7 +88,6 @@ window.onload = function(){
         for(var i = 0; i<arrP.length;i++) {
             clearBlock($(arrP[i]));
         }
-        if(person){
             person.click(function () {
                 if(personText.css('display') == 'none'){
                     personText.css('display','block');
@@ -96,7 +95,6 @@ window.onload = function(){
                     personText.css('display','none');
                 }
             });
-        }
     }
 
     var person = $('.team-introduce .founder-wrap');
